@@ -24,7 +24,7 @@ public class inicioApp {
 	
 	static int contarPalabras(String a){
 		int nPalabras=0;
-		
+		int pepe;
 		for (int i=0;i<a.length();i++) {
 			if (contarCaracteresTotal(a)!=0 && nPalabras==0)
 		 		nPalabras=1;
