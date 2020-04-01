@@ -21,7 +21,7 @@ public class ContadorTest {
     public ContadorTest() {
     }
     /**
-     * Prueba de
+     * Prueba de la clase contador
      */
     @Test
     public void testContarPalabras() {
@@ -31,14 +31,22 @@ public class ContadorTest {
         a[1]=1;
         a[2]=1;
         a[3]=1;
+        
+        /**
+         * Probamos el metodo contarPalabras para ver que devuelve los resultados esperados
+         */
         assertTrue(c1.contarPalabras("hola")==1);
         assertFalse(c1.contarPalabras("hola")!=1);
         
-        
+        /**
+         * Probamos el metodo contarCaracteresTotal para ver que devuelve los resultados esperados
+         */
         assertTrue(c1.contarCaracteresTotal("hola")==4);
         assertFalse(c1.contarCaracteresTotal("hola")!=4);
         
-        
+        /**
+         * Probamos el metodos ContarRepetidos para ver que devuelve los resultados esperados
+         */
         assertTrue(c1.ContarRepetidos("hola")==a);
         assertFalse(c1.ContarRepetidos("hola")!=a);
     }
