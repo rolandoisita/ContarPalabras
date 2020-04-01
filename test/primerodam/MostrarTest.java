@@ -22,7 +22,9 @@ public class MostrarTest {
     public MostrarTest() {
     }
     
-    
+    /**
+     * Pruebas de la clase Mostrar
+     */
 
    
     @Test
@@ -34,12 +36,18 @@ public class MostrarTest {
         a[1]=1;
         a[2]=1;
         a[3]=1;
-        
+        /**
+         * Probamos el metodo textoCaracteresTotal para ver que devuelve la cadena esperada
+         */
         assertEquals("el numero de caracteres es 4",m1.textoCaracteresTotal(cadena.length()));
         
-        
+        /**
+         * Probamos el metodo textoNumeroPalabras para ver que devuelve la cadena esperada
+         */
         assertEquals("el numero de palabras es 1",m1.textoNumeroPalabras(1));
-        
+        /**
+         * Probamos el metodo textoTodosCaracteres para ver que devuelve la cadena esperada
+         */
         
         assertEquals("el caracter h se repite 1 veces \n"+"el caracter o se repite 1 veces \n"+"el caracter l se repite 1 veces \n"+"el caracter a se repite 1 veces \n",m1.textoTodosCaracteres(a));
         
