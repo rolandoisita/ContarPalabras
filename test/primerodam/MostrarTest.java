@@ -29,6 +29,11 @@ public class MostrarTest {
     public void testTextoCaracteresTotal() {
         Mostrar m1 = new Mostrar();
         String cadena ="hola";
+        int a[]=new int[4];
+        a[0]=1;
+        a[1]=1;
+        a[2]=1;
+        a[3]=1;
         
         assertEquals("el numero de caracteres es 4",m1.textoCaracteresTotal(cadena.length()));
         
@@ -36,7 +41,7 @@ public class MostrarTest {
         assertEquals("el numero de palabras es 1",m1.textoNumeroPalabras(1));
         
         
-        
+        assertEquals("el caracter h se repite 1 veces \n"+"el caracter o se repite 1 veces \n"+"el caracter l se repite 1 veces \n"+"el caracter a se repite 1 veces \n",m1.textoTodosCaracteres(a));
         
         
     }
