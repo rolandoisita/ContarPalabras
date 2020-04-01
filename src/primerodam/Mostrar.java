@@ -10,18 +10,37 @@ import static primerodam.inicioApp.cadena;
 /**
  *
  * @author alumno
+ * Clase para mostrar datos
  */
 public class Mostrar {
+    
+    /**
+     * 
+     * @param total recibe el total de caracteres de uan frase
+     * @return devuelve una cadena de caracteres diciendo cuantos caracteres hay en una frase
+     */
     public String textoCaracteresTotal(int total) {
 	
 		return "el numero de caracteres es "+total;
 		
 	}
+    
+    /**
+     * 
+     * @param total recibe el total de palabras que tiene una cadena de caracteres
+     * @return devuelve un string diciendo el numero de palabras que tiene esa cadena de caracteres
+     */
 
-	public String textoNumeroPalabras (int total) {
+    public String textoNumeroPalabras (int total) {
 		return "el numero de palabras es "+total;
 	}
-	public String textoTodosCaracteres (int total[]) {
+    
+    /**
+     * 
+     * @param total recibe un array de enteros 
+     * @return devuelve un string diciendo cuantas veces se repite cada caracter de una cadena de caracteres
+     */
+    public String textoTodosCaracteres (int total[]) {
 		String resultado ="";
 		
 		for(int i=0;i<cadena.length();i++) {

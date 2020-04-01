@@ -10,8 +10,15 @@ import static primerodam.inicioApp.cadena;
 /**
  *
  * @author alumno
+ * Clase para contar palabras y caracteres
  */
 public class Contador {
+    
+    /**
+     * Cuenta el numero de palabras que tiene una cadena de caracteres
+     * @param a recibe una cadena de caracteres
+     * @return devuelve el numero de palabras que tiene la cadeena de caracteres
+     */
     public int contarPalabras(String a){
 		int nPalabras=0;
 		for (int i=0;i<a.length();i++) {
@@ -26,6 +33,11 @@ public class Contador {
 		return nPalabras;
 		
 	}
+    /**
+     * Cuenta los caracteres que hay en una cadena
+     * @param a recibe una cadena de caracteres
+     * @return devuelve el numero de caracteres que tiene una cadena
+     */
 	public int contarCaracteresTotal(String a) {
 		char letras[];
 		letras =new char[a.length()];
@@ -43,6 +55,11 @@ public class Contador {
 		
 		
 	}
+        /**
+         * Cuenta las veces que se repite cada caracter de una cadena
+         * @param a recibe una cadena de caracteres
+         * @return devuelve un array con las veces que se repite el caracter que corresponde cada posicion en la cadena
+         */
 	
 	public int[] ContarRepetidos(String a) {
 		

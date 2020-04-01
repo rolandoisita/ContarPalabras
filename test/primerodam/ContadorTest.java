@@ -21,7 +21,7 @@ public class ContadorTest {
     public ContadorTest() {
     }
     /**
-     * Test of contarPalabras method, of class Contador.
+     * Prueba de
      */
     @Test
     public void testContarPalabras() {
